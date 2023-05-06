@@ -1,0 +1,49 @@
+//imports necesarios
+@import "../base/variables";
+
+/* Estilos propios de home*/
+main {
+
+    .contenedor-discos{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .disco{
+            background-color: $color2;
+            color: $color1;
+            box-shadow: 1rem 1rem 1rem $color3;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem;
+
+            img{
+                width: 100%;
+                padding: 0.5rem;
+                background-color: $color1;
+            }
+
+            .disco-detalles{
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+
+                .disco-agregar{
+                    background-color: $color2;
+                    color: $color1;
+                    border-color: $color1;
+                    padding: 0.3rem;
+                    border-radius: 1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.5s; 
+                }
+                .disco-agregar:hover {
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+
+    }
+}

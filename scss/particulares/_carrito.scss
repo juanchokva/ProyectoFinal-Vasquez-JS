@@ -1,0 +1,129 @@
+//imports necesarios
+@import "../base/variables";
+
+/*Estilos propios de carrito*/
+
+aside{
+    nav{
+        .botones-carrito{
+            gap: 3rem;
+        }
+    }
+}
+
+main{
+    .tmain-carrito{
+        padding-left: 1rem;
+    }
+    .contenedor-carrito{
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .carrito-vacio{
+            margin: 1rem;
+        }
+
+        .carrito-discos{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 1rem;
+
+            .carrito-disco{
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                background-color: $color2;
+                color: $color1;
+                padding: 0.75rem;
+                border-radius: .5rem;
+                box-shadow: .5rem .5rem 1rem black;
+
+                .carrito-disco-imagen{
+                    width: 4rem;
+                    padding: 0.2rem;
+                    background-color: $color1;
+                }
+
+                .carrito-disco-eliminar{
+                    border: 0;
+                    background-color: transparent;
+                    color: $color1;
+                    padding-right: 1rem;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+
+                .carrito-disco-eliminar:hover{
+                    color: rgb(181, 0, 0);
+                }
+            }
+        }
+
+        .carrito-acciones{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+
+            .carrito-acciones-izq{
+
+                .carrito-acciones-vaciar{
+                    background-color: $color2;
+                    color: $color1;
+                    border-color: $color2;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    border-radius: .5rem;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+
+                .carrito-acciones-vaciar:hover{
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+
+            .carrito-acciones-der{
+                display: flex;
+                align-items: center;
+                
+
+                .carrito-acciones-total{
+                    display: flex;
+                    gap: 0.3rem;
+                    background-color: $color3;
+                    color: $color1;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    border-top-left-radius: .5rem;
+                    border-bottom-left-radius: .5rem;
+                }
+
+                .carrito-acciones-comprar{
+                    background-color: $color2;
+                    color: $color1;
+                    border-color: $color2;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    border-top-right-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+
+                .carrito-acciones-comprar:hover{
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}

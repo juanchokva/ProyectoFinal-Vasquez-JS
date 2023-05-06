@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap" rel="stylesheet">
+    <!--Link de icons bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Link de css local-->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <div class="contenedor">
+        <aside>
+            <header>
+                <h1 class="tprincipal"><i class="bi bi-vinyl-fill"></i> bogotana records</h1>
+            </header>
+            <nav>
+                <ul class="botones-carrito">
+                    <li><a class="boton-menu boton-volver" href="../index.html"><i class="bi bi-skip-backward-fill"></i> Seguir comprando</a></li>
+                    <li><a class="boton-menu boton-carrito boton-select" href="./carrito.html"><i class="bi bi-basket2-fill"></i> Carrito</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 | Vásquez-Ocampo</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="tmain-carrito">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio disabled">Tu carrito está vacío <i class="bi bi-exclamation-triangle"></i></p>
+                <div id="carrito-discos" class="carrito-discos">
+                    <!--Este contendio se muestra a través de carrito.js-->
+                </div>
+                <div id="carrito-acciones" class="carrito-acciones">
+                    <div class="carrito-acciones-izq">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">
+                            vaciar carrito
+                        </button>
+                    </div>
+                    <div class="carrito-acciones-der">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$100000</p>
+                        </div>
+                        <button id="comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "disco-01",
+        "titulo": "Intergamelán",
+        "imagen": "../img/album01.png",
+        "artista": "ccc",
+        "precio": 55000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-02",
+        "titulo": "liminalidad",
+        "imagen": "../img/album02.png",
+        "artista": "baho",
+        "precio": 60000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-03",
+        "titulo": "Sacrae",
+        "imagen": "../img/album03.png",
+        "artista": "sergio-cote",
+        "precio": 65000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-04",
+        "titulo": "Memorias",
+        "imagen": "../img/album04.png",
+        "artista": "sergio-cote",
+        "precio": 55000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-05",
+        "titulo": "Telemático",
+        "imagen": "../img/album05.png",
+        "artista": "notch",
+        "precio": 60000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-06",
+        "titulo": "Faces",
+        "imagen": "../img/album06.png",
+        "artista": "notch",
+        "precio": 70000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-07",
+        "titulo": "fagot+fagot",
+        "imagen": "../img/album07.png",
+        "artista": "baho",
+        "precio": 55000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-08",
+        "titulo": "Tropósferas",
+        "imagen": "../img/album08.png",
+        "artista": "vasquez-ocampo",
+        "precio": 50000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-09",
+        "titulo": "complejidad",
+        "imagen": "../img/album09.png",
+        "artista": "baho",
+        "precio": 60000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-10",
+        "titulo": "Monográfico",
+        "imagen": "../img/album10.png",
+        "artista": "vasquez-ocampo",
+        "precio": 65000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-11",
+        "titulo": "Introspectral",
+        "imagen": "../img/album11.png",
+        "artista": "vasquez-ocampo",
+        "precio": 55000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-12",
+        "titulo": "Cote",
+        "imagen": "../img/album12.png",
+        "artista": "sergio-cote",
+        "precio": 60000,
+        "cantidad": 0
+    },
+
+    {
+        "id": "disco-13",
+        "titulo": "Loops",
+        "imagen": "../img/album13.png",
+        "artista": "notch",
+        "precio": 60000,
+        "cantidad": 0
+    }
+]

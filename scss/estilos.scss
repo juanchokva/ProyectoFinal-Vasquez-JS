@@ -1,0 +1,113 @@
+//imports
+
+@import "../base/variables";
+
+/* Reset general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $color1;
+}
+
+/*Configuraciones generales*/
+
+.contenedor{
+    background-color: $color3;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+aside{
+    background-color: $color3;
+    color: $color1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    nav{
+        ul{
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .boton-menu{
+                background-color: $color3;
+                color: $color1;
+                padding: 0.5rem;
+                padding-right: 1rem;
+                font-size: medium;
+                font-weight: 800;
+                border-color: transparent;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                border-right: 0;
+                cursor: pointer;
+                transition: 0.5s;            
+            }
+
+            .boton-menu:hover {
+                border-color: $color1;
+            }
+
+            .boton-select{
+                background-color: $color1;
+                color: $color3;
+            }
+
+            .numcarrito{
+                background-color: $color1;
+                color: $color2;
+                padding: 0 0.25rem;
+                border-radius: .25rem;
+            }
+
+            
+        }
+        
+    }
+
+    footer{
+        color: $color4;
+    }
+}
+
+main{
+    background-color: $color1;
+    color: $color2;
+    margin: 0rem;
+    margin-top: 6rem;
+    padding: 2rem;
+
+    .tmain{
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    
+}
+
+//Para estilos de home
+
+@import "./particulares/home";
+@import "./particulares/carrito";
+
+/* Clase para esconder elementos*/
+
+.disabled{
+    display: none;
+}

@@ -1,0 +1,194 @@
+/* Reset general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pathway Extreme', sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #e9eee8; }
+
+/*Configuraciones generales*/
+.contenedor {
+  background-color: #404242;
+  display: grid;
+  grid-template-columns: 1fr 5fr; }
+
+aside {
+  background-color: #404242;
+  color: #e9eee8;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  aside nav ul {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 1.5rem; }
+    aside nav ul .boton-menu {
+      background-color: #404242;
+      color: #e9eee8;
+      padding: 0.5rem;
+      padding-right: 1rem;
+      font-size: medium;
+      font-weight: 800;
+      border-color: transparent;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-right: 0;
+      cursor: pointer;
+      transition: 0.5s; }
+    aside nav ul .boton-menu:hover {
+      border-color: #e9eee8; }
+    aside nav ul .boton-select {
+      background-color: #e9eee8;
+      color: #404242; }
+    aside nav ul .numcarrito {
+      background-color: #e9eee8;
+      color: #173664;
+      padding: 0 0.25rem;
+      border-radius: .25rem; }
+  aside footer {
+    color: #868686; }
+
+main {
+  background-color: #e9eee8;
+  color: #173664;
+  margin: 0rem;
+  margin-top: 6rem;
+  padding: 2rem; }
+  main .tmain {
+    padding-bottom: 1rem;
+    padding-left: 1rem; }
+
+/* Estilos propios de home*/
+main .contenedor-discos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  main .contenedor-discos .disco {
+    background-color: #173664;
+    color: #e9eee8;
+    box-shadow: 1rem 1rem 1rem #404242;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem; }
+    main .contenedor-discos .disco img {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #e9eee8; }
+    main .contenedor-discos .disco .disco-detalles {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem; }
+      main .contenedor-discos .disco .disco-detalles .disco-agregar {
+        background-color: #173664;
+        color: #e9eee8;
+        border-color: #e9eee8;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s; }
+      main .contenedor-discos .disco .disco-detalles .disco-agregar:hover {
+        background-color: #e9eee8;
+        color: #173664; }
+
+/*Estilos propios de carrito*/
+aside nav .botones-carrito {
+  gap: 3rem; }
+
+main .tmain-carrito {
+  padding-left: 1rem; }
+
+main .contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  main .contenedor-carrito .carrito-vacio {
+    margin: 1rem; }
+  main .contenedor-carrito .carrito-discos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem; }
+    main .contenedor-carrito .carrito-discos .carrito-disco {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      background-color: #173664;
+      color: #e9eee8;
+      padding: 0.75rem;
+      border-radius: .5rem;
+      box-shadow: .5rem .5rem 1rem black; }
+      main .contenedor-carrito .carrito-discos .carrito-disco .carrito-disco-imagen {
+        width: 4rem;
+        padding: 0.2rem;
+        background-color: #e9eee8; }
+      main .contenedor-carrito .carrito-discos .carrito-disco .carrito-disco-eliminar {
+        border: 0;
+        background-color: transparent;
+        color: #e9eee8;
+        padding-right: 1rem;
+        cursor: pointer;
+        transition: .5s; }
+      main .contenedor-carrito .carrito-discos .carrito-disco .carrito-disco-eliminar:hover {
+        color: #b50000; }
+  main .contenedor-carrito .carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; }
+    main .contenedor-carrito .carrito-acciones .carrito-acciones-izq .carrito-acciones-vaciar {
+      background-color: #173664;
+      color: #e9eee8;
+      border-color: #173664;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: .5rem;
+      cursor: pointer;
+      transition: .5s; }
+    main .contenedor-carrito .carrito-acciones .carrito-acciones-izq .carrito-acciones-vaciar:hover {
+      background-color: #e9eee8;
+      color: #173664; }
+    main .contenedor-carrito .carrito-acciones .carrito-acciones-der {
+      display: flex;
+      align-items: center; }
+      main .contenedor-carrito .carrito-acciones .carrito-acciones-der .carrito-acciones-total {
+        display: flex;
+        gap: 0.3rem;
+        background-color: #404242;
+        color: #e9eee8;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem; }
+      main .contenedor-carrito .carrito-acciones .carrito-acciones-der .carrito-acciones-comprar {
+        background-color: #173664;
+        color: #e9eee8;
+        border-color: #173664;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        cursor: pointer;
+        transition: .5s; }
+      main .contenedor-carrito .carrito-acciones .carrito-acciones-der .carrito-acciones-comprar:hover {
+        background-color: #e9eee8;
+        color: #173664; }
+
+/* Clase para esconder elementos*/
+.disabled {
+  display: none; }
