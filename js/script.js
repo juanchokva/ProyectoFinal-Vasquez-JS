@@ -3,7 +3,7 @@ let discos = [];
 let carrito = [];
 
 //Llamar los discos desde el archivo json y guardarlos en el array (asincrónico)
-fetch("../js/discos.json")
+fetch("./js/discos.json")
     .then(response => response.json())
     .then(datos => {
         discos = datos;
